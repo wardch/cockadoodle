@@ -1,0 +1,2 @@
+# cockadoodle
+Rails Cockadoodle app
