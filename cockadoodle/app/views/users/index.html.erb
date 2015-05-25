@@ -1,1 +1,56 @@
-howie!
+<h2 class="welcome"> Welcome <%= @user.username %> </h2>
+<div class="homepage">
+<% if logged_in? %>
+
+  <form method="get" class="create_button" action="/greetings/new">
+    <input type="submit" value="Create a wakeup call!">
+  </form>
+
+   <form class="logout" method="post" action="/session">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Log Out">
+  </form>
+
+
+  <p></p>
+
+  <div class='new_cockadoodle'>
+   <!--  <h1 class='welcome'>Create a Cock-a-doodle!</h1>
+  <form id="post_form" action="/cockadoodle" method="post">
+    <label for="post[author_name]">Phone Number:</label><br>
+    <input type="text" name="phonenumber"><br>
+    <label for="post[body]">Body:</label><br>
+    <textarea name="body"></textarea><br>
+    <input class="form_submit" type="submit" name="submit" value="Create a
+  Cock-a-doodle!"><br>
+  </form> -->
+</div>
+  <p></p>
+
+  <form class="homebutton hidden" method="get" action="/">
+    <input type="submit" value="Cancel">
+  </form>
+
+
+
+
+
+
+  <h1>Your Previous Cockadoodles!!</h1>
+
+<ul>
+  <% @greetings.reverse.each do |greeting| %>
+  <h2><li>To: <%= greeting.phonenumber %></li></h2>
+  <p><%= greeting.body %></p>
+  <% end %>
+</ul>
+
+
+
+<% else %>
+  <a href="/users/new"><button type="button">Create An Account</button></a>
+  <a href="/users/login"><button type="button">Log In</button></a>
+<% end %>
+
+<%=  %>
+</div>

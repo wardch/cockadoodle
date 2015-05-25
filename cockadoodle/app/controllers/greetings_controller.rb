@@ -1,14 +1,15 @@
-class CockadoodlesController < ApplicationController
-
-include ApplicationHelper
-
+class GreetingsController < ApplicationController
   def index
+
   end
 
   def create
   end
 
+
   def new
+    @greeting = Greeting.new
+    @user = User.new
   end
 
   def edit

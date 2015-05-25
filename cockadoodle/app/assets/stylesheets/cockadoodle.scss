@@ -1,3 +1,76 @@
 // Place all the styles related to the cockadoodle controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+
+html {
+  background: url(https://timedotcom.files.wordpress.com/2014/12/rooster-morning.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+th {
+  text-align: left;
+}
+
+body {
+  /*background-color: #b0c4de;*/
+  font-family: ubuntu;
+  color: white;
+  text-align: center;
+  background-color: 'FFE4B5';
+  background-image: url('http://7-themes.com/data_images/out/73/7022809-summer-countryside-pennsylvania.jpg');
+  /*background-image: url('http://cache3.asset-cache.net/gc/165967833-rooster-crowing-at-dawn-background-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=lAZOOfqc2mOmrv%2BKv8V6PKeAxctfulufjWMQja%2BSQi0%3D');*/
+}
+
+h2.welcome {
+  font-size: 4em;
+}
+
+input, textarea {
+  padding: .4em 0 .25em .5em;
+  margin: .5em 0 1em 0;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  border-radius: .5em;
+}
+
+input[type=text]:focus, textarea:focus {
+  border: 1px solid blue;
+}
+
+input[type=submit] {
+  margin: 0;
+  padding: 1em .25em;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #666666;
+  background-color: white;
+  font-size: 1.5em;
+}
+
+input[type=submit]:hover {
+  background-color: #F2CD52;
+  color: white;
+}
+
+textarea {
+  height: 10em;
+  resize: none;
+}
+
+.homebutton.hidden {
+    display: none;
+}
